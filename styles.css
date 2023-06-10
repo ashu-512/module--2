@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+/* html{
+    display: block;
+} */
+p{
+    border: 1px solid black;
+padding: 40px 0 10px 10px;
+width: 300px;
+position: relative;
+background-color: lightslategrey;
+height: 150px;
+/* top: 0;
+right: 0; */
+}
+
+
+span{
+border: 1px solid black;
+margin: auto;
+width: 100px;
+padding: 5px;
+position: absolute;
+top: 0;
+right: 0;
+text-align: center;
+
+}
+span.top{
+    background-color: aqua;
+}
+span.middle{
+    background-color: pink;
+}
+span.lasty{
+    background-color: greenyellow;
+}
+h1
+{
+text-align: center;
+margin-bottom: 30px;
+}
+/* Styles for mobile devices */
+@media (max-width: 767px) {
+p{ /* Styles specific to mobile devices */
+
+display: block;
+margin: 20px auto ;
+
+ 
+}
+}
+/* Styles for tablets */
+@media (min-width: 768px) and (max-width: 991px ) {
+/* Styles specific to tablets */
+p{
+    float: left;
+margin: 5px;
+}
+p.last{
+width: 85%;
+}
+.first
+{
+width: 400px;
+
+}
+.middley{
+    width:400px;
+}
+}
+
+/* Styles for laptops and desktops */
+@media (min-width: 992px) {
+/* Styles specific to laptops and desktops */
+p{
+justify-content: center;
+float: left;
+width: 450px;
+margin: 10px 15px;
+}
+
+}
